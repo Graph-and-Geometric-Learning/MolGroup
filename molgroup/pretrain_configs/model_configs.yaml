@@ -1,0 +1,15 @@
+graphormer:
+  - datasets: pcqm4mv2
+  - lr: 0.0001
+  - gnn: graphormer
+  - feature: simple
+  - emb_dim: 512
+  - drop_ratio: 0.1
+  - batch_size: 128
+  - num_layer: 5
+  - balance: False
+  - iter_all_graphs: True
+  - num_heads: 8
+  - attention_dropout_rate: 0.3
+  - seed: 0
+  - epoch: 30

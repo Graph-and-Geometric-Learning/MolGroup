@@ -1,0 +1,22 @@
+
+python app/train.py \
+    --device 0 \
+    --seeds 0 \
+    --dataset_root /home/huangtin/MolGroup/dataset \
+    --save_dir /home/huangtin/MolGroup/checkpoints \
+    --datasets pcqm4mv2 \
+    --gnn graphormer \
+    --epochs 30 \
+    --feature simple \
+    --lr 1e-4 \
+    --batch_size 128 \
+    --eval_batch_size 512 \
+    --emb_dim 512 \
+    --num_layer 5 \
+    --drop_ratio 0.1 \
+    --eval_step 1 \
+    --num_workers 3 \
+    --eval_flag \
+    --num_heads 8 \
+    --attention_dropout_rate 0.3 \
+    --save_checkpoint \
