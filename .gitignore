@@ -13,7 +13,7 @@ results/
 data/
 *.egg-info/
 checkpoints/
-dataets/
+datasets/
 
 # C extensions
 *.so
