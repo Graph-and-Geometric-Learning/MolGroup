@@ -91,9 +91,6 @@ def train(epoch, model_list, device, loader, optimizer_list, task_types,):
         
         loss = 0. if loss is None or isinstance(loss, float) else loss.item()
         epoch_iter.set_description(f"epoch: {epoch}, train_loss: {loss:.4f}")
-
-        if step == 10:
-            break
     
     return [total_loss / (step + 1) for total_loss in total_loss_list]
 
